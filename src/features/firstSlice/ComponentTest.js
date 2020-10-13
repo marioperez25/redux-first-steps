@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
     changeName,
@@ -20,7 +20,7 @@ export function ComponentTest(){
             />
             <button
           aria-label="submit new name"
-          onClick={() => dispatch(changeName())}
+          onClick={() => dispatch(changeName(inputName))}
         >change it</button>
             <span >"namePlaceholder"</span>
         </div>
