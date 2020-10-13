@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import componentTestSlice from '../features/firstSlice/componentTestSlice';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    name: componentTestSlice,
   },
 });
